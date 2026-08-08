@@ -1,0 +1,22 @@
+# Editor / OS
+.DS_Store
+*.swp
+*~
+.idea/
+.vscode/
+*.code-workspace
+
+# Local scratch (keep playground samples tracked)
+playground/scratch/
+*.tmp
+*.bak
+
+# Env / secrets
+.env
+.env.*
+
+# Python / notebooks if you mix them in later
+__pycache__/
+.ipynb_checkpoints/
+.venv/
+venv/

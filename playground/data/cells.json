@@ -1,0 +1,34 @@
+{
+  "experiment": "cycle-life-demo",
+  "lab": "battery-lab",
+  "cells": [
+    {
+      "id": "cell-001",
+      "chemistry": "NMC811",
+      "capacity_mah": 3200,
+      "cycles": 120,
+      "status": "ok"
+    },
+    {
+      "id": "cell-002",
+      "chemistry": "LFP",
+      "capacity_mah": 2800,
+      "cycles": 240,
+      "status": "ok"
+    },
+    {
+      "id": "cell-003",
+      "chemistry": "NMC811",
+      "capacity_mah": 3150,
+      "cycles": 45,
+      "status": "failed"
+    },
+    {
+      "id": "cell-004",
+      "chemistry": "NCA",
+      "capacity_mah": 3500,
+      "cycles": 180,
+      "status": "ok"
+    }
+  ]
+}

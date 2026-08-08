@@ -1,0 +1,10 @@
+Shell practice notes
+====================
+
+Useful tools to revisit:
+- rg (ripgrep) for fast search
+- fd as a nicer find
+- jq for JSON
+- tmux for persistent sessions
+
+Keywords for search drills: banana, ERROR, NMC811, Lovelace
