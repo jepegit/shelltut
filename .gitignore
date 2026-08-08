@@ -16,6 +16,10 @@ playground/scratch/*
 .env
 .env.*
 
+# Local DB dumps from drills (seed SQL in playground/postgres/init stays tracked)
+playground/scratch/*.dump.sql
+playground/scratch/*-export.csv
+
 # Python / notebooks if you mix them in later
 __pycache__/
 .ipynb_checkpoints/

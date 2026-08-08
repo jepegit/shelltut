@@ -24,7 +24,9 @@ git switch -c practice/$(date +%Y%m%d)
 shelltut/
 ├── exercises/      # guided drills (one file per tool or topic)
 ├── playground/     # disposable files for practice
+│   └── postgres/   # Dockerized Postgres + seed SQL
 ├── cheatsheets/    # short reference notes
+├── scripts/        # helpers (reset playground, postgres, …)
 └── README.md
 ```
 
@@ -46,6 +48,7 @@ shelltut/
 14. [GitHub CLI (`gh`)](exercises/14-gh.md) — auth, repos, issues, PRs, `gh api`
 15. [vim](exercises/15-vim.md) — modes, motions, edit, search/replace
 16. [API testing](exercises/16-api-testing.md) — curl, httpie/xh, jq asserts
+17. [PostgreSQL](exercises/17-postgresql.md) — Dockerized Postgres, `psql`, SQL, `\copy`, dump/restore
 
 Pick any exercise; they are mostly independent after the first two.
 
@@ -57,6 +60,14 @@ Pick any exercise; they are mostly independent after the first two.
 
 ```bash
 ./scripts/reset-playground.sh
+```
+
+Postgres practice container:
+
+```bash
+./scripts/postgres.sh up     # then: ./scripts/postgres.sh psql
+./scripts/postgres.sh reset  # wipe volume + reseed
+./scripts/postgres.sh down
 ```
 
 ## License

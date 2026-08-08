@@ -1,0 +1,21 @@
+services:
+  db:
+    image: postgres:16-alpine
+    container_name: shelltut-postgres
+    environment:
+      POSTGRES_USER: shelltut
+      POSTGRES_PASSWORD: shelltut
+      POSTGRES_DB: shelltut
+    ports:
+      - "54329:5432"
+    volumes:
+      - shelltut_pgdata:/var/lib/postgresql/data
+      - ./init:/docker-entrypoint-initdb.d:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U shelltut -d shelltut"]
+      interval: 3s
+      timeout: 3s
+      retries: 20
+
+volumes:
+  shelltut_pgdata:
