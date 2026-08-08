@@ -25,9 +25,10 @@ shelltut/
 ├── exercises/      # guided drills (one file per tool or topic)
 ├── playground/     # disposable files for practice
 │   ├── docker/     # sample Dockerfile + Compose web demo
-│   └── postgres/   # Dockerized Postgres + seed SQL
+│   ├── postgres/   # Dockerized Postgres + seed SQL
+│   └── ssh/        # local sshd lab for SSH/rsync drills
 ├── cheatsheets/    # short reference notes
-├── scripts/        # helpers (reset playground, postgres, …)
+├── scripts/        # helpers (reset playground, postgres, ssh-lab, …)
 └── README.md
 ```
 
@@ -51,6 +52,8 @@ shelltut/
 16. [API testing](exercises/16-api-testing.md) — curl, httpie/xh, jq asserts
 17. [PostgreSQL](exercises/17-postgresql.md) — Dockerized Postgres, `psql`, SQL, `\copy`, dump/restore
 18. [Docker](exercises/18-docker.md) — run/build/Compose, ports, volumes (do before 17 if new to Docker)
+19. [SSH](exercises/19-ssh.md) — keys, config, remote commands, scp/sftp (local Docker lab)
+20. [rsync](exercises/20-rsync.md) — dry-run, push/pull over SSH, excludes, `--delete`
 
 Pick any exercise; they are mostly independent after the first two.
 
@@ -70,6 +73,14 @@ Postgres practice container:
 ./scripts/postgres.sh up     # then: ./scripts/postgres.sh psql
 ./scripts/postgres.sh reset  # wipe volume + reseed
 ./scripts/postgres.sh down
+```
+
+SSH / rsync practice lab (sshd on port 2222):
+
+```bash
+./scripts/ssh-lab.sh up
+./scripts/ssh-lab.sh ssh
+./scripts/ssh-lab.sh down
 ```
 
 ## License

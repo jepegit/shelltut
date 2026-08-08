@@ -20,6 +20,11 @@ playground/scratch/*
 playground/scratch/*.dump.sql
 playground/scratch/*-export.csv
 
+# SSH lab generated secrets / host keys cache
+playground/ssh/keys/
+playground/ssh/authorized_keys
+playground/ssh/known_hosts
+
 # Python / notebooks if you mix them in later
 __pycache__/
 .ipynb_checkpoints/

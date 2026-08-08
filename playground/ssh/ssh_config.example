@@ -1,0 +1,11 @@
+# Copy snippets into ~/.ssh/config (or: ssh -F playground/ssh/ssh_config.example …)
+# Paths below assume you run from the shelltut repo root.
+
+Host shelltut-lab
+  HostName 127.0.0.1
+  Port 2222
+  User shelltut
+  IdentityFile playground/ssh/keys/shelltut_ed25519
+  IdentitiesOnly yes
+  StrictHostKeyChecking accept-new
+  UserKnownHostsFile playground/ssh/known_hosts

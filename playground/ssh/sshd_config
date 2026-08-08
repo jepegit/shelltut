@@ -1,0 +1,15 @@
+Port 22
+Protocol 2
+HostKey /etc/ssh/ssh_host_ed25519_key
+HostKey /etc/ssh/ssh_host_rsa_key
+PermitRootLogin no
+PasswordAuthentication no
+KbdInteractiveAuthentication no
+PubkeyAuthentication yes
+AuthorizedKeysFile /home/shelltut/.ssh/authorized_keys
+AllowUsers shelltut
+Subsystem sftp /usr/lib/ssh/sftp-server
+AllowTcpForwarding yes
+X11Forwarding no
+PrintMotd no
+PidFile /run/sshd.pid

@@ -1,0 +1,18 @@
+services:
+  ssh:
+    build: .
+    image: shelltut-sshd:local
+    container_name: shelltut-sshd
+    ports:
+      - "2222:22"
+    volumes:
+      - ./authorized_keys:/keys/authorized_keys:ro
+      - shelltut_ssh_data:/data
+    healthcheck:
+      test: ["CMD-SHELL", "pgrep sshd >/dev/null"]
+      interval: 3s
+      timeout: 3s
+      retries: 20
+
+volumes:
+  shelltut_ssh_data:
