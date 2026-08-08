@@ -31,3 +31,7 @@ git remote -v
 ## Check yourself
 
 `git status` is clean on `main`, and your practice branch is deleted locally.
+
+## Related
+
+For GitHub from the terminal (issues, PRs, API), see [`gh`](14-gh.md).
