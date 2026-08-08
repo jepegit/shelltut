@@ -34,4 +34,5 @@ git remote -v
 
 ## Related
 
+For resolving conflicts in depth, see [merge conflicts](21-merge-conflicts.md).  
 For GitHub from the terminal (issues, PRs, API), see [`gh`](14-gh.md).
