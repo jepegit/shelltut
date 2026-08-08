@@ -29,3 +29,7 @@ echo "tick $(date -Iseconds)" >> playground/scratch/live.log
 ## Check yourself
 
 You can find the first `ERROR` line in `app.log` without opening an editor.
+
+## Related
+
+When you do need an editor, see [vim](15-vim.md).

@@ -44,6 +44,7 @@ shelltut/
 12. [Herdr basics](exercises/12-herdr-basics.md) — [herdr.dev](https://herdr.dev/) workspaces, panes, detach/reattach
 13. [Herdr CLI](exercises/13-herdr-cli.md) — automate panes/agents over the socket API
 14. [GitHub CLI (`gh`)](exercises/14-gh.md) — auth, repos, issues, PRs, `gh api`
+15. [vim](exercises/15-vim.md) — modes, motions, edit, search/replace
 
 Pick any exercise; they are mostly independent after the first two.
 
