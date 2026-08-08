@@ -32,3 +32,7 @@ tmux attach -t training
 ## Check yourself
 
 Detach, close the terminal emulator, open a new one, and reattach to `training` still running.
+
+## Related
+
+For a mouse-native workspace manager with agent awareness, see [Herdr basics](12-herdr-basics.md) ([herdr.dev](https://herdr.dev/)).

@@ -41,6 +41,8 @@ shelltut/
 9. [tmux](exercises/09-tmux.md) — sessions, windows, panes
 10. [jq](exercises/10-jq.md) — JSON on the command line
 11. [git in the terminal](exercises/11-git.md) — status, diff, log, stash, branches
+12. [Herdr basics](exercises/12-herdr-basics.md) — [herdr.dev](https://herdr.dev/) workspaces, panes, detach/reattach
+13. [Herdr CLI](exercises/13-herdr-cli.md) — automate panes/agents over the socket API
 
 Pick any exercise; they are mostly independent after the first two.
 
