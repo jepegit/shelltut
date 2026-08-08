@@ -24,6 +24,7 @@ git switch -c practice/$(date +%Y%m%d)
 shelltut/
 ├── exercises/      # guided drills (one file per tool or topic)
 ├── playground/     # disposable files for practice
+│   ├── docker/     # sample Dockerfile + Compose web demo
 │   └── postgres/   # Dockerized Postgres + seed SQL
 ├── cheatsheets/    # short reference notes
 ├── scripts/        # helpers (reset playground, postgres, …)
@@ -49,6 +50,7 @@ shelltut/
 15. [vim](exercises/15-vim.md) — modes, motions, edit, search/replace
 16. [API testing](exercises/16-api-testing.md) — curl, httpie/xh, jq asserts
 17. [PostgreSQL](exercises/17-postgresql.md) — Dockerized Postgres, `psql`, SQL, `\copy`, dump/restore
+18. [Docker](exercises/18-docker.md) — run/build/Compose, ports, volumes (do before 17 if new to Docker)
 
 Pick any exercise; they are mostly independent after the first two.
 

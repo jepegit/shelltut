@@ -10,7 +10,7 @@ Start a local database, connect with `psql`, explore schemas, run SQL, import/ex
 
 ## Setup
 
-Needs Docker (Desktop or Engine). On WSL2, enable Docker Desktop → Settings → Resources → WSL Integration for this distro.
+Needs Docker (Desktop or Engine). On WSL2, enable Docker Desktop → Settings → Resources → WSL Integration for this distro. New to Docker? Do [exercise 18](18-docker.md) first.
 
 ```bash
 ./scripts/postgres.sh up
