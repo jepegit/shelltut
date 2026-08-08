@@ -6,8 +6,9 @@
 .vscode/
 *.code-workspace
 
-# Local scratch (keep playground samples tracked)
-playground/scratch/
+# Local scratch (keep directory, ignore contents)
+playground/scratch/*
+!playground/scratch/.gitkeep
 *.tmp
 *.bak
 
